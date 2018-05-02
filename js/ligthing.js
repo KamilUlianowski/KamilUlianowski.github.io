@@ -14,7 +14,7 @@ var submit_btn;
 function inito(){
     submit_btn = document.getElementById("submit-btn")
     submit_btn.onclick = function() {
-      window.location = "file:///C:/Users/kamil/OneDrive/Desktop/jira/index.html"  
+      window.location = "https://kamilulianowski.github.io/fight"  
     };
 }
 
