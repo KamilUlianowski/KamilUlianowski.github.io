@@ -1,0 +1,13 @@
+// bugs = '[{
+//     "developer": "Maciej Sasinowski",
+//     "developer_image": "blabla.pl",
+//     "fixed": false,
+//     "started": "10.01.2018",
+//     "image_url": "hehe.pl",
+//     "bug_title": "XD"
+// }
+// ]'
+
+data_bugs = '[{"developer" : "Maciej Sasinowski", "fixed" : false, "started": "10.01.2018"}]';
+data_developers = '[{"developer": "Przemysław Gwoździej",
+     "image":"https://i.imgur.com/lfnzcxw.png"},{"developer": "Sylwester Leszczyński", "image":"https://i.imgur.com/bUUeBea.png"}, {"developer": "Robert Grybowicz", "image":"https://i.imgur.com/4Sdh6jo.png"}, {"developer": "Mateusz Lisowski", "image":"https://i.imgur.com/Xhcpx1D.png"}]';
