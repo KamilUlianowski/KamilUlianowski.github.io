@@ -2,20 +2,20 @@ function init() {
     bugs = JSON.parse(data_bugs);
     developers = JSON.parse(data_developers)
     for (var i = 0; i < developers.length; i++) {
-        add_developers_to_carosuel(developers[i].image)
+        add_developers_to_carosuel(developers[i].name, developers[i].image)
     }
     for (var i = 0; i < developers.length; i++) {
-        add_developers_to_carosuel(developers[i].image)
+        add_developers_to_carosuel(developers[i].name, developers[i].image)
     }
     for (var i = 0; i < bugs.length; i++) {
         add_bug_to_list(bugs[i].name)
     }
 };
 
-function add_developers_to_carosuel(image_src) {
+function add_developers_to_carosuel(dev_name, image_src) {
     carosuel = document.getElementById("carousel");
     if (carosuel !== null) {
-        dev = create_dev_html_el(image_src)
+        dev = create_dev_html_el(dev_name, image_src)
         carosuel.appendChild(dev);
     }
 }
@@ -27,11 +27,15 @@ function add_bug_to_list(name) {
     }
 }
 
-function create_dev_html_el(image_src) {
+function create_dev_html_el(dev_name, image_src) {
     var figure = document.createElement("figure");
     var image = document.createElement("img")
     image.src = image_src;
     var img = figure.appendChild(image);
+    image.onclick = function (dev_name) {
+        window.location.href = "https://kamilulianowski.github.io";
+        localStorage.setItem("dev_name", dev_name);
+    };
     return figure;
 }
 
@@ -39,7 +43,7 @@ function create_bug_el(name) {
     var el = document.createElement("li");
     el.innerText = name;
     localStorage.setItem("bug_name", name);
-    el.onclick = function() { window.location.href = "https://kamilulianowski.github.io"};
+    el.onclick = function () { window.location.href = "https://kamilulianowski.github.io" };
     return el;
 }
 
