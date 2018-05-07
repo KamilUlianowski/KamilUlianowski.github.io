@@ -253,7 +253,7 @@ function render() {
     particles = [];
     //
     text = new Text({
-        copy: 'Maciek vs Inny kolor kropki'
+        copy: localStorage.bug_name
     });
     canvas.addEventListener('click', function (e) {
         var x = e.clientX;
