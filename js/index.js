@@ -26,16 +26,18 @@ var w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
 var h = canvas1.height = canvas2.height = canvas3.height = window.innerHeight;
 canvas4.width = canvas5.width = canvas6.width = 320;
 canvas4.height = canvas5.height = canvas6.height = 360;
+canvas5.width = 570;
 window.addEventListener('resize', function () {
   w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
   h = canvas1.height = canvas2.height = canvas3.height = window.innerHeight;
   canvas4.width = canvas5.width = canvas6.width = 320;
   canvas4.height = canvas5.height = canvas6.height = 360;
+  canvas5.width = 570;
 });
 
 function load_profile_image() {
   profile_image = new Image();
-  profile_image.src = './test1.jpg';
+  profile_image.src = "https://media.licdn.com/dms/image/C4D03AQGGeiwiMabigw/profile-displayphoto-shrink_800_800/0?e=1530748800&v=beta&t=BGYmBoMCwmz3eyCX995mnyYqaRQ5VrfOYeFXPlqFuWw";
   profile_image.onload = function () {
   ctx4.drawImage(profile_image, 0, 0, canvas4.width, canvas4.height);
   }
@@ -43,7 +45,7 @@ function load_profile_image() {
 
 function load_bug_image() {
   bug_image = new Image();
-  bug_image.src = './test2.png';
+  bug_image.src =  "./kropka.png"
   bug_image.onload = function () {
   ctx5.drawImage(bug_image, 0, 0, canvas5.width, canvas5.height);
   }
