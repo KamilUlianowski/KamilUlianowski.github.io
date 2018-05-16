@@ -160,7 +160,7 @@ function Text(options) {
     buffer.fillRect(0, 0, pool.width, pool.height);
 
     this.size = options.size || 100;
-    this.copy = (options.copy || 'Hello!') + ' ';
+    this.copy = (options.copy || 'Maciek vs kolor kropki!') + ' ';
     this.color = options.color || '#cd96fe';
     this.delay = options.delay || 5;
     this.delay = 0;
